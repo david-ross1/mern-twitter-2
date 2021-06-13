@@ -11,13 +11,13 @@ const UserSchema = new Schema({
     required: true,
   },
   password: {
-    type: "String",
+    type: String,
     required: true,
-  }
- }, {
-  timestamps: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-const User = mongoose.model('users', UserSchema); 
-
-module.exports = User; 
+module.exports = User = mongoose.model("users", UserSchema);
