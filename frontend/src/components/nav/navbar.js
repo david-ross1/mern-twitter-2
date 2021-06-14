@@ -40,9 +40,11 @@ class NavBar extends React.Component {
 
   render() {
       return (
-        <div className='chirper'>
+        <div className="logotainer"> 
+          <div className='chirper'>
             <h1>Chirper</h1>
             { this.getLinks() }
+          </div>
         </div>
       );
   }
