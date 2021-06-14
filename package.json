@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "david's mern-twitter",
   "main": "app.js",
+  "engines": {
+    "node": "10.13.0"
+    }
+  }
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
