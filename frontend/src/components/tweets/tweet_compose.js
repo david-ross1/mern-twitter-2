@@ -35,15 +35,16 @@ class TweetCompose extends React.Component {
 
   render() {
     return (
-        <div>
+        <div className='write-tweet-container'>
             <form onSubmit={this.handleSubmit}>
-                <div>
+                <div className='write-tweet'>
                     <input type="textarea"
                         value={this.state.text}
                         onChange={this.update()}
                         placeholder="Write your tweet..."
+                        className='write-tweet-input'
                     />
-                    <input type="submit" value="Submit" />
+                    <input className='write-tweet-submit' type="submit" value="Submit" />
                 </div>
             </form>
             <br />

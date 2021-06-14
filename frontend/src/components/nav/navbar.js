@@ -20,20 +20,22 @@ class NavBar extends React.Component {
           <div className="NavBar">
             <div className="tweet-links">
               <div className='t-link'>
-                <Link className='link' to={'/tweets'}>All Tweets</Link>
+                <Link className='link' to={'/tweets'}>All Tweets</Link> 
                 <Link className='link' to={'/profile'}>Profile</Link>
                 <Link  className='link' to={'/new_tweet'}>Write a Tweet</Link>
-                <button className='logout' onClick={this.logoutUser}>Logout</button>
+                <div className='logout-button'><button className='logout' onClick={this.logoutUser}>Logout</button></div>
               </div>
             </div>
             </div>
         );
       } else {
         return (
+          <div className='session-container'> 
             <div className="NavBar Links2">
-                <Link to={'/signup'}>Signup</Link>
-                <Link to={'/login'}>Login</Link>
+                <button className='session-button'> <Link className='link' to={'/signup'}>Signup</Link> </button>
+                <button className='session-button'><Link className='link' to={'/login'}>Login</Link></button>
             </div>
+          </div>
         );
       }
   }

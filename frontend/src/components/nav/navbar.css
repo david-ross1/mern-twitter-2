@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 50px; 
-    background: #86F9FB
+    background: #008FB8
 }
 
 .NavBar button {
@@ -13,6 +13,7 @@
     width: 100px;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .Links2 {
@@ -28,8 +29,9 @@
 }
 
 .chirper {
-  background: #86F9FB;
+  background: #008FB8;
   text-align: center; 
+  color: white
 }
 
 .tlink  {
@@ -37,20 +39,25 @@
 }
 
 .link {
-  padding: 20px;
+  color: white;
 }
 
+.session-button { 
+  padding: 3px
+}
 
-.submit, .logout {
+.submit, .logout, .session-button {
   border-radius: 10px; 
   margin-top: 10px; 
-  background: lightblue;
+  background: #1D60E0;
   height: 30px; 
   width: 70px; 
+  color: white;
+  font-size: 14px;
 }
 
-.submit:hover, .logout:hover {
-  background: lightgreen;
+.submit:hover, .logout:hover, .session-button:hover {
+  background: #107CFF;
   cursor: pointer 
 }
 
@@ -65,4 +72,38 @@
 
 .chirper {
   padding-top: 1px; 
+}
+
+.logout-button {
+  padding-right: 20px; 
+}
+
+button {
+  all: unset;
+  color: blue;
+  -webkit-text-fill-color: blue;
+  cursor: pointer;
+  	border: none;
+	padding: 5px;
+	font: 14px;
+	cursor: pointer;
+	outline: inherit;
+
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
+
+.link {
+  color: white;
+}
+
+a.link {
+ padding: 10px; 
+}
+
+.t-link {
+  display: flex; 
+  justify-content: space-around;
 }

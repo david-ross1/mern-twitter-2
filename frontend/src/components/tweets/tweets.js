@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import TweetBox from './tweet_box';
+import './tweet.css'
 
 class Tweet extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Tweet extends React.Component {
       return (<div>There are no Tweets</div>)
     } else {
       return (
-        <div>
+        <div className='tweet-header'>
           <h2>All Tweets</h2>
           {this.state.tweets.map(tweet => (
             <TweetBox key={tweet._id} text={tweet.text} />

@@ -1,0 +1,33 @@
+.tweet-header {
+  padding: 10px; 
+  color: white;
+  font-size: 13px;
+}
+
+.write-tweet-container {
+  padding: 50px; 
+}
+
+.tweet-text {
+  color: white;
+}
+
+.write-tweet-input {
+  padding: 10px;
+  margin-right: 50px;
+  width: 70%;  
+  border-radius: 5px; 
+}
+
+.write-tweet-submit {
+  padding: 10px; 
+  border-radius: 5px; 
+  background: #1D60E0; 
+  color: white; 
+}
+
+.write-tweet-submit:hover {
+  color: white;
+  cursor: pointer; 
+  background: #107CFF;
+}
