@@ -1,7 +1,8 @@
 .NavBar {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    height: 50px; 
+    background: #86F9FB
 }
 
 .NavBar button {
@@ -15,9 +16,10 @@
 }
 
 .Links2 {
-    width: 400px;
+    margin: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 *{
   font-family: sans-serif;
@@ -25,3 +27,37 @@
   font-weight: bold; 
 }
 
+.chirper {
+  background: #86F9FB;
+  text-align: center; 
+}
+
+.tlink  {
+  padding: 20px; 
+}
+
+.link {
+  padding: 20px;
+}
+
+
+.submit, .logout {
+  border-radius: 10px; 
+  margin-top: 20px; 
+  background: lightblue;
+  height: 30px; 
+  width: 70px; 
+}
+
+.submit:hover, .logout:hover {
+  background: lightgreen;
+  cursor: pointer 
+}
+
+.logout {
+  float: right;  
+}
+
+.tweet-links {
+  width: 100%; 
+}

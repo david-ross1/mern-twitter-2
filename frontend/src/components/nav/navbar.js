@@ -18,11 +18,13 @@ class NavBar extends React.Component {
       if (this.props.loggedIn) {
         return (
           <div className="NavBar">
-            <div className="Links2">
-                <Link to={'/tweets'}>All Tweets</Link>
-                <Link to={'/profile'}>Profile</Link>
-                <Link to={'/new_tweet'}>Write a Tweet</Link>
-                <button onClick={this.logoutUser}>Logout</button>
+            <div className="tweet-links">
+              <div className='t-link'>
+                <Link className='link' to={'/tweets'}>All Tweets</Link>
+                <Link className='link' to={'/profile'}>Profile</Link>
+                <Link  className='link' to={'/new_tweet'}>Write a Tweet</Link>
+                <button className='logout' onClick={this.logoutUser}>Logout</button>
+              </div>
             </div>
             </div>
         );
@@ -38,7 +40,7 @@ class NavBar extends React.Component {
 
   render() {
       return (
-        <div className='Links2'>
+        <div className='chirper'>
             <h1>Chirper</h1>
             { this.getLinks() }
         </div>

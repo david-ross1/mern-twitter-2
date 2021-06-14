@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore({});
   }
   const root = document.getElementById('root');
+  document.body.style = 'background: #FBF6E8;';
 
   ReactDOM.render(<Root store={store} />, root);
 });
